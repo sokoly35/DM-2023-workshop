@@ -48,3 +48,64 @@ Jeśli chcemy opuścić środowisko wywołujemy:
 ```
 conda deactivate
 ```
+
+## VS Code
+
+### Rozszerzenia
+
+Do pythona:
+- Python,
+- Jupyter,
+- autoDocstring - Python Docstring Generator,
+- isort,
+- Pylance - language support,
+- Python indent.
+
+Do programowania:
+- Markdown Preview Enhanced,
+- Better Comments,
+- Bracket Pair Color DLW,
+- vscode-pets.
+
+### Ustawienia
+
+```json
+{
+    "python.analysis.typeCheckingMode": "basic",
+    "python.formatting.provider": "black",
+    "python.languageServer": "Pylance",
+    "editor.formatOnSave": true,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "autoDocstring.docstringFormat": "numpy",
+}
+```
+
+## Profilowanie kodu
+
+### Py-heat
+
+Profilowanie kodu z wykorzystanie py-heat
+
+```
+pyheat <ścieżka_do_pliku>
+```
+
+### Line-profiler
+
+Profilowanie kodu jest uruchomione z wykorzystaniem
+
+```
+kernprof -l <ścieżka_do_pliku>
+```
+
+W celu wyświetlenia wyniku analizy wywołaj
+
+```
+python -m line_profiler <ścieżka_do_wygenerowanego_pliku_lprof>
+```
+
