@@ -12,6 +12,7 @@ import example_module
 
 # isort
 # autoDocstring - Python Docstring Generator
+# black autoformatter
 
 
 def parse_author_params(
